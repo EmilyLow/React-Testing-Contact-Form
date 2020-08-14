@@ -16,6 +16,7 @@ const ContactForm = () => {
         <div>
           <label htmlFor="firstName">First Name*</label>
           <input
+            id = "firstName"
             name="firstName"
             placeholder="Edd"
             ref={register({ required: true, maxLength: 3 })}
@@ -28,6 +29,8 @@ const ContactForm = () => {
         <div>
           <label htmlFor="lastName">Last Name*</label>
           <input
+          //Trying adding id based off slack 
+            id = "lastName"
             name="lastName"
             placeholder="Burke"
             ref={register({ required: true })}
